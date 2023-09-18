@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera p {
+    background-color: aquamarine;
+    padding-left: 15px;
+}
+
+.titulo {
+    background-color: darkslateblue;
+    color: #FFF;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.titulo i {
+    padding: 0 15px 0 15px;
+}
