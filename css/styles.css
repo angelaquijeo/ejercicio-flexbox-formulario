@@ -124,3 +124,13 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+
+/**ACA SE ENCUENTRAN LOS ESTILOS DEL FORMULARIO DE LA PAGINA DE REGISTRO**/
+
+.formulario {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}

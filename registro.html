@@ -4,11 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/0710548f1f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <header class="cabecera">
+        <p>20% de descuento en todos los productos</p>
+        <div class="titulo">
+            <i class="fa-solid fa-store fa-beat fa-xl"></i>
+            <h1>Tiendita de Don Polo</h1>
+            <i class="fa-solid fa-dog fa-bounce" style="color: #ffffff;"></i>
+        </div>
+        <ul class="navbar">
+            <li><a href="#">Contacto</a></li>
+            <li><a href="registro.html">Registrarme</a></li>
+            <li><a href="#">Ingresar</a></li>
+            <li><a href="index.html">Regresar</a></li>
+        </ul>
+    </header>
+    <main class="formulario">
+        <div>
+            <h2>Añadí tu super</h2>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
 
+            <form action="">
+                <label for="name">*Nombre</label>
+                <input type="text" id="name" name="name" required>
+                <label for="species">*Especie</label>
+                <select name="species" id="species">
+                    <option value="level-1">Nivel 1</option>
+                    <option value="level-2">Nivel 2</option>
+                    <option value="level-3">Nivel 3</option>
+                    <option value="level-4">Nivel 4</option>
+                    <option value="level-5">Nivel 5</option>
+                </select>
+                <label for="date">Fecha</label>
+                <input type="date" id="date" name="date" min="1900-01-01">
+                <label for="add">Agregar foto</label>
+                <input type="file" id="file" name="file" accept=".jpg .jpge">
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                <label for="powers">Poderes</label>
+                <label for="fly">
+                    <input type="checkbox" id="fly" name="powers" value="fly">Volar
+                </label>
+                <label for="supersmart">
+                    <input type="checkbox" id="supersmart" name="powers" value="supersmart">Superinteligencia
+                </label>
+                <label for="laser">
+                    <input type="checkbox" id="laser" name="powers" value="laser">Vista de rayo laser
+                </label>
+                <label for="money">
+                    <input type="checkbox" id="money" name="powers" value="money">Billetera gorda
+                </label>
+                <hr>
+                <label for="type">Tipo de personaje</label>
+                <label>
+                    <input type="radio" name="type" id="hero">Heroe / Heroina
+                </label>
+                <label>
+                    <input type="radio" name="type" id="villain">Villano / Villana
+                </label>
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="footer-bar">
+        <p>Todos los derechos reservados a Angel Aquije ~ <a href="https://github.com/angelaquijeo"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></p>
+    </footer>
 </body>
 
 </html>
