@@ -22,56 +22,69 @@
         </div>
         <ul class="navbar">
             <li><a href="#">Contacto</a></li>
-            <li><a href="registro.html">Registrarme</a></li>
             <li><a href="#">Ingresar</a></li>
             <li><a href="index.html">Regresar</a></li>
         </ul>
     </header>
-    <main class="formulario">
-        <div>
+    <main>
+        <div class="formulario-div">
             <h2>Añadí tu super</h2>
             <p>Agregá tu personaje favorito completando las opciones.</p>
 
-            <form action="">
-                <label for="name">*Nombre</label>
-                <input type="text" id="name" name="name" required>
-                <label for="species">*Especie</label>
-                <select name="species" id="species">
-                    <option value="level-1">Nivel 1</option>
-                    <option value="level-2">Nivel 2</option>
-                    <option value="level-3">Nivel 3</option>
-                    <option value="level-4">Nivel 4</option>
-                    <option value="level-5">Nivel 5</option>
-                </select>
-                <label for="date">Fecha</label>
-                <input type="date" id="date" name="date" min="1900-01-01">
-                <label for="add">Agregar foto</label>
-                <input type="file" id="file" name="file" accept=".jpg .jpge">
-                <textarea name="description" id="description" cols="30" rows="10"></textarea>
-                <label for="powers">Poderes</label>
-                <label for="fly">
-                    <input type="checkbox" id="fly" name="powers" value="fly">Volar
-                </label>
-                <label for="supersmart">
-                    <input type="checkbox" id="supersmart" name="powers" value="supersmart">Superinteligencia
-                </label>
-                <label for="laser">
-                    <input type="checkbox" id="laser" name="powers" value="laser">Vista de rayo laser
-                </label>
-                <label for="money">
-                    <input type="checkbox" id="money" name="powers" value="money">Billetera gorda
-                </label>
-                <hr>
-                <label for="type">Tipo de personaje</label>
-                <label>
-                    <input type="radio" name="type" id="hero">Heroe / Heroina
-                </label>
-                <label>
-                    <input type="radio" name="type" id="villain">Villano / Villana
-                </label>
+            <form action="#" method="post">
+                <div class="formulario-inside">
+                    <fieldset class="formulario-columna">
+                        <label for="name">*Nombre</label>
+                        <input type="text" id="name" name="name" class="form-text" placeholder="Nombre" required>
+                        <label for="date">Fecha</label>
+                        <input type="date" id="date" name="date" class="form-text" min="1900-01-01">
+                        <textarea name="description" id="description" cols="30" rows="10" placeholder="Descripción"></textarea>
+                    </fieldset>
+                    <fieldset class="formulario-columna">
+                        <label for="species">*Especie</label>
+                        <select name="species" id="species" class="form-text">
+                            <option value="level-1">Nivel 1</option>
+                            <option value="level-2">Nivel 2</option>
+                            <option value="level-3">Nivel 3</option>
+                            <option value="level-4">Nivel 4</option>
+                            <option value="level-5">Nivel 5</option>
+                        </select>
+                        <label for="add">Agregar foto</label>
+                        <input type="file" id="file" name="file" accept=".jpg .jpge">
+                        <label for="powers">Poderes</label>
+                        <div class="form-checkbox">
+                            <label for="fly">
+                                <input type="checkbox" id="fly" name="powers" value="fly">Volar
+                            </label>
+                            <label for="supersmart">
+                                <input type="checkbox" id="supersmart" name="powers" value="supersmart">Superinteligencia
+                            </label>
+                            <label for="laser">
+                                <input type="checkbox" id="laser" name="powers" value="laser">Vista de rayo laser
+                            </label>
+                            <label for="money">
+                                <input type="checkbox" id="money" name="powers" value="money">Billetera gorda
+                            </label>
+                        </div>
+                        <hr>
+                        <label for="type">Tipo de personaje</label>
+                        <div class="form-radio">
+                            <label>
+                                <input type="radio" name="type" id="hero">Heroe / Heroina
+                            </label>
+                            <label>
+                                <input type="radio" name="type" id="villain">Villano / Villana
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+                <br>
+                <div class="btn-submit">
+                    <input type="submit" value="Añadir">
+                </div>
             </form>
-        </div>
 
+        </div>
     </main>
 
     <footer class="footer-bar">
