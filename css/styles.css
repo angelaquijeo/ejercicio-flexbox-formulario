@@ -21,7 +21,6 @@ header {
     height: 20px;
     font-size: 12px;
     padding-top: 4px;
-    justify-content: center;
 }
 
 .titulo {
@@ -146,7 +145,7 @@ main {
 }
 
 .formulario-div h2,
-p {
+.formulario-div p {
     text-align: center;
     padding-top: 10px;
 }
